@@ -1,7 +1,7 @@
 {
   "name": "@gausszhou/vue-ruler",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "main": "./lib/vue-ruler.js",
   "exports": "./lib/vue-ruler.js",
   "scripts": {
