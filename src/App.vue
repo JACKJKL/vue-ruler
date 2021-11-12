@@ -13,7 +13,8 @@
 </template>
 
 <script>
-import VueRulerTool from "./components/vue-ruler";
+// import VueRulerTool from "./components/vue-ruler";
+import VueRulerTool from "../lib/vue-ruler";
 export default {
   name: "app",
   components: {
@@ -30,6 +31,7 @@ export default {
         { type: "v", value: 130 },
         { type: "v", value: 450 },
         { type: "v", value: 1000 },
+        { type: "v", value: 1229 },
       ],
       visible: true
     };

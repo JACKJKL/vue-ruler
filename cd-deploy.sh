@@ -8,6 +8,7 @@ echo "构建失败"
 else
 echo "构建成功"
 cd dist
+
 git init 
 # 配置user
 git config --local user.name "gausszhou"

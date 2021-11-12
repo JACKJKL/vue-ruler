@@ -375,108 +375,108 @@ export default {
 
 <style lang="scss" scoped>
 .vue-ruler {
-  .vue-ruler-wrapper {
-    left: 0;
-    top: 0;
-    z-index: 997;
-    overflow: hidden;
-    user-select: none;
-  }
-
-  .vue-ruler-top,
-  .vue-ruler-left {
-    position: relative;
-    &:hover {
-      opacity: 0.8;
+    .vue-ruler-wrapper {
+      left: 0;
+      top: 0;
+      z-index: 997;
+      overflow: hidden;
+      user-select: none;
     }
-    &::after {
-      content: "";
+  
+    .vue-ruler-top,
+    .vue-ruler-left {
+      position: relative;
+      &:hover {
+        opacity: 0.8;
+      }
+      &::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 42px;
+        height: 42px;
+        transform-origin: center center;
+        transform: translateX(-21px) translateY(-21px) rotate(45deg);
+      }
+    }
+    .vue-ruler-top {
+      left: 30px;
+      width: calc(100% - 30px);
+      height: 30px;
       background-color: #fff;
+    }
+    .vue-ruler-left {
+      height: 100%;
+      width: 30px;
+      background-color: #fff;
+    }
+  
+    .vue-ruler-ref-line-v,
+    .vue-ruler-ref-line-h,
+    .vue-ruler-ref-drag-h,
+    .vue-ruler-ref-drag-v,
+    .vue-ruler-ref-drag-dot {
       position: absolute;
       left: 0;
       top: 0;
-      width: 42px;
-      height: 42px;
-      transform-origin: center center;
-      transform: translateX(-21px) translateY(-21px) rotate(45deg);
+      overflow: hidden;
+      z-index: 999;
+    }
+  
+    .vue-ruler-ref-line-v,
+    .vue-ruler-ref-line-h,
+    .vue-ruler-ref-drag-h,
+    .vue-ruler-ref-drag-v {
+      z-index: 998;
+    }
+  
+    .vue-ruler-ref-drag-h {
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #409eff;
+      cursor: n-resize;
+      top: -10px;
+      z-index: 999;
+    }
+    .vue-ruler-ref-drag-v {
+      width: 1px;
+      height: 100%;
+      border-left: 1px solid #409eff;
+      cursor: w-resize;
+      left: -10px;
+    }
+    .vue-ruler-ref-line-h {
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #dc4c3f;
+      cursor: n-resize;
+    }
+    .vue-ruler-ref-line-v {
+      width: 1px;
+      height: 100%;
+      border-left: 1px solid #dc4c3f;
+      cursor: w-resize;
+    }
+    .vue-ruler-ref-drag-dot {
+      color: #dc4c3f;
+      padding: 0 10px;
+    }
+    .vue-ruler-content {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      z-index: 997;
+    }
+    .vue-ruler-content-mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      z-index: 998;
     }
   }
-  .vue-ruler-top {
-    left: 30px;
-    width: calc(100% -30px);
-    height: 30px;
-    background-color: #fff;
-  }
-  .vue-ruler-left {
-    height: 100%;
-    width: 30px;
-    background-color: #fff;
-  }
-
-  .vue-ruler-ref-line-v,
-  .vue-ruler-ref-line-h,
-  .vue-ruler-ref-drag-h,
-  .vue-ruler-ref-drag-v,
-  .vue-ruler-ref-drag-dot {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    z-index: 999;
-  }
-
-  .vue-ruler-ref-line-v,
-  .vue-ruler-ref-line-h,
-  .vue-ruler-ref-drag-h,
-  .vue-ruler-ref-drag-v {
-    z-index: 998;
-  }
-
-  .vue-ruler-ref-drag-h {
-    width: 100%;
-    height: 1px;
-    border-top: 1px solid #409eff;
-    cursor: n-resize;
-    top: -10px;
-    z-index: 999;
-  }
-  .vue-ruler-ref-drag-v {
-    width: 1px;
-    height: 100%;
-    border-left: 1px solid #409eff;
-    cursor: w-resize;
-    left: -10px;
-  }
-  .vue-ruler-ref-line-h {
-    width: 100%;
-    height: 1px;
-    border-top: 1px solid #dc4c3f;
-    cursor: n-resize;
-  }
-  .vue-ruler-ref-line-v {
-    width: 1px;
-    height: 100%;
-    border-left: 1px solid #dc4c3f;
-    cursor: w-resize;
-  }
-  .vue-ruler-ref-drag-dot {
-    color: #dc4c3f;
-    padding: 0 10px;
-  }
-  .vue-ruler-content {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    z-index: 997;
-  }
-  .vue-ruler-content-mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 998;
-  }
-}
 </style>
