@@ -2,14 +2,16 @@
   "name": "@gausszhou/vue-ruler",
   "version": "0.1.0",
   "private": true,
+  "module": "lib/vue-ruler.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "webpack"
+    "lib": "node build/esbuild.config.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "esbuild": "^0.13.13",
     "vue": "^2.6.11"
   },
   "devDependencies": {
