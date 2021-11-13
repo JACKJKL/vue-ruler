@@ -8,7 +8,7 @@ module.exports = {
     // false 取消生成map文件 
     productionSourceMap: false,
     // false 去除文件哈希值
-    filenameHashing: false,
+    filenameHashing: true,
     // 这里编写webpack配置
     configureWebpack: {
       output: {
