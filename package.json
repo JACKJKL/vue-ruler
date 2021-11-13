@@ -1,22 +1,33 @@
 {
   "name": "@gausszhou/vue-ruler",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "一个Vue组件，可展示标尺用于拖拽辅助",
   "private": false,
+  "publishConfig": {
+    "access":"public"
+  },
   "main": "./lib/vue-ruler.js",
+  "unpkg": "./lib/vue-ruler.js",
   "exports": "./lib/vue-ruler.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gausszhou/vue-ruler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gausszhou/vue-ruler/issues"
+  },
+  "homepage": "https://github.com/gausszhou/vue-ruler#readme",
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "node esbuild.config.js",
-    "publish":"npm publish --access=public"
+    "lib": "node esbuild.config.js"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
   },
   "devDependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "esbuild": "^0.13.13",

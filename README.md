@@ -1,6 +1,6 @@
 # VueRuler
 
-![](./images/head.png)
+![](https://static.gausszhou.top/data/image/github/vue-ruler.png)
 
 ## 任务清单
 
