@@ -1,5 +1,8 @@
 # VueRuler
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Npm Package](https://img.shields.io/npm/v/@gausszhou/vue-ruler.svg)](https://www.npmjs.com/package/@gausszhou/vue-ruler)
+
+
 ![](https://static.gausszhou.top/data/image/github/vue-ruler.png)
 
 ## 任务清单
@@ -69,10 +72,10 @@ export default {
       this.visible = !this.visible;
     },
     clear() {
-      this.presetLine = [];
+      this.helperLine = [];
     },
     reset() {
-      this.presetLine = this.$options.data().presetLine;
+      this.helperLine = this.$options.data().helperLine;
     }
   }
 };

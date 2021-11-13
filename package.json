@@ -1,14 +1,23 @@
 {
   "name": "@gausszhou/vue-ruler",
-  "version": "1.0.6",
-  "description": "一个Vue组件，可展示标尺用于拖拽辅助",
+  "version": "1.0.7",
+  "description": "一个Vue组件，可展示标尺和辅助线",
+  "files": [
+    "/lib/*.js"
+  ],
+  "main": "./lib/vue-ruler.js",
+  "unpkg": "./lib/vue-ruler.js",
+  "exports": "./lib/vue-ruler.js",
   "private": false,
   "publishConfig": {
     "access":"public"
   },
-  "main": "./lib/vue-ruler.js",
-  "unpkg": "./lib/vue-ruler.js",
-  "exports": "./lib/vue-ruler.js",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "component",
+    "ruler"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/gausszhou/vue-ruler.git"
@@ -35,6 +44,10 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
   },
   "browserslist": [
     "> 1%",
