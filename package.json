@@ -1,6 +1,7 @@
 {
   "name": "@gausszhou/vue-ruler",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "一个Vue组件，可展示标尺用于拖拽辅助",
   "private": false,
   "main": "./lib/vue-ruler.js",
   "exports": "./lib/vue-ruler.js",
@@ -8,7 +9,8 @@
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "node esbuild.config.js"
+    "lib": "node esbuild.config.js",
+    "publish":"npm publish --access=public"
   },
   "dependencies": {
     "core-js": "^3.6.5",
