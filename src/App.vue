@@ -4,7 +4,7 @@
       <button @click="toggle">显示/隐藏标尺</button>
       <button @click="clear">清空</button>
       <button @click="reset">重置</button>
-      <vue-ruler v-model="presetLine" :visible.sync="visible">
+      <vue-ruler v-model="helperLine" :visible.sync="visible">
         <iframe src="https://www.gausszhou.top/note" width="1000" height="400" frameborder="0" />
         <img src="https://vuejs.org/images/logo.svg" style="height:200px" />
       </vue-ruler>
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      presetLine: [
+      helperLine: [
         { type: "h", value: 56 },
         { type: "h", value: 140 },
         { type: "h", value: 200 },
@@ -37,7 +37,7 @@ export default {
     };
   },
   watch: {
-    presetLine(newV) {
+    helperLine(newV) {
       console.log(newV);
     }
   },
