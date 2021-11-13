@@ -3,7 +3,8 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Npm Package](https://img.shields.io/npm/v/@gausszhou/vue-ruler.svg)](https://www.npmjs.com/package/@gausszhou/vue-ruler)
 
 
-![](https://static.gausszhou.top/data/image/github/vue-ruler.png)
+[![Github Pages](https://static.gausszhou.top/data/image/github/vue-ruler.png)](https://www.gausszhou.top/vue-ruler)
+
 
 ## 任务清单
 
