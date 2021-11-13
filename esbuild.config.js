@@ -1,13 +1,12 @@
 const vuePlugin = require("esbuild-vue");
-const PackageJson = require("../package.json");
-const UglifyJS = require("uglify-js");
+const PackageJson = require("./package.json");
 
 require("esbuild")
   .build({
     entryPoints: ["./src/index.js"],
     bundle: true,
     outfile: PackageJson.main,
-    format: "cjs", // cjs iife esm
+    format: "esm", // cjs iife esm
     minify: true,
     plugins: [
       vuePlugin({

@@ -4,21 +4,21 @@
       <button @click="toggle">显示/隐藏标尺</button>
       <button @click="clear">清空</button>
       <button @click="reset">重置</button>
-      <vue-ruler-tool v-model="presetLine" :visible.sync="visible">
-        <iframe src="https://www.gausszhou.top" width="1000" height="600" frameborder="0" />
+      <vue-ruler v-model="presetLine" :visible.sync="visible">
+        <iframe src="https://www.gausszhou.top/note" width="1000" height="400" frameborder="0" />
         <img src="https://vuejs.org/images/logo.svg" style="height:200px" />
-      </vue-ruler-tool>
+      </vue-ruler>
     </section>
   </div>
 </template>
 
 <script>
-// import VueRulerTool from "./components/vue-ruler";
-import VueRulerTool from "../lib/vue-ruler";
+// import VueRuler from "./components/vue-ruler";
+import VueRuler from "../lib/vue-ruler";
 export default {
   name: "app",
   components: {
-    VueRulerTool
+    VueRuler
   },
   data() {
     return {
