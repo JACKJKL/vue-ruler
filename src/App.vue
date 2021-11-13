@@ -9,16 +9,19 @@
         <img src="https://vuejs.org/images/logo.svg" style="height:200px" />
       </vue-ruler>
     </section>
+     <GithubBadge url="https://github.com/gausszhou/vue-ruler"></GithubBadge>
   </div>
 </template>
 
 <script>
+import GithubBadge from "@/components/GithubBadge.vue";
 // import VueRuler from "./components/vue-ruler";
 import VueRuler from "../lib/vue-ruler";
 export default {
   name: "app",
   components: {
-    VueRuler
+    VueRuler,
+    GithubBadge
   },
   data() {
     return {
@@ -46,10 +49,10 @@ export default {
       this.visible = !this.visible;
     },
     clear() {
-      this.presetLine = [];
+      this.helperLine = [];
     },
     reset() {
-      this.presetLine = this.$options.data().presetLine;
+      this.helperLine = this.$options.data().helperLine;
     }
   }
 };
