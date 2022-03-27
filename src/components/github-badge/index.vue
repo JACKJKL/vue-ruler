@@ -13,7 +13,6 @@ export default {
       default: "https://github.com/gausszhou/"
     }
   }
-
 }
 </script>
 

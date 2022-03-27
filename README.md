@@ -6,12 +6,12 @@
 [![Github Pages](https://static.gausszhou.top/data/image/github/vue-ruler.png)](https://www.gausszhou.top/vue-ruler)
 
 
-## 任务清单
+## Todo List
 
 - [ ] 更新详细的使用文档
 - [ ] 由于标尺本身使用canvas绘制，不能通过样式穿透修改，因此需要定义一些props
 
-## 快速上手
+## Quick Start
 
 ```shell
 yarn add  @gausszhou/vue-ruler

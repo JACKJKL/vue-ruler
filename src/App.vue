@@ -5,18 +5,17 @@
       <button @click="clear">清空</button>
       <button @click="reset">重置</button>
       <vue-ruler v-model="helperLine" :visible.sync="visible">
-        <iframe src="https://www.gausszhou.top/note" width="1000" height="400" frameborder="0" />
-        <img src="https://vuejs.org/images/logo.svg" style="height:200px" />
+        <iframe src="https://www.gausszhou.top/" width="1000" height="500" frameborder="0" />
       </vue-ruler>
     </section>
-     <GithubBadge url="https://github.com/gausszhou/vue-ruler"></GithubBadge>
+     <github-badge url="https://github.com/gausszhou/vue-ruler"></github-badge>
   </div>
 </template>
 
 <script>
-import GithubBadge from "@/components/GithubBadge.vue";
-// import VueRuler from "./components/vue-ruler";
-import VueRuler from "../lib/vue-ruler";
+import GithubBadge from "@/components/github-badge";
+import VueRuler from "./components/vue-ruler";
+// import VueRuler from "../lib/vue-ruler";
 export default {
   name: "app",
   components: {

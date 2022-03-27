@@ -3,6 +3,10 @@ node_modules/
 dist/
 lib/
 
+# compress files
+*.zip
+*.tgz
+
 # local env files
 .env.local
 .env.*.local

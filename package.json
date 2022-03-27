@@ -1,18 +1,19 @@
 {
   "name": "@gausszhou/vue-ruler",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "一个Vue组件，可展示标尺和辅助线",
-  "files": [
-    "/lib/*.js"
-  ],
+  "author": "gausszhou <gausszhou@qq.com>",
   "main": "./lib/vue-ruler.js",
   "unpkg": "./lib/vue-ruler.js",
   "exports": "./lib/vue-ruler.js",
   "private": false,
   "publishConfig": {
-    "access":"public"
+    "access": "public"
   },
   "license": "MIT",
+  "files": [
+    "/lib/*.js"
+  ],
   "keywords": [
     "vue",
     "component",
@@ -22,28 +23,30 @@
     "type": "git",
     "url": "https://github.com/gausszhou/vue-ruler.git"
   },
-  "bugs": {
-    "url": "https://github.com/gausszhou/vue-ruler/issues"
-  },
   "homepage": "https://github.com/gausszhou/vue-ruler#readme",
   "scripts": {
     "dev": "vue-cli-service serve",
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "node esbuild.config.js"
+    "build:lib": "webpack --config=webpack.lib.js"
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-service": "^4.3.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "esbuild": "^0.13.13",
-    "esbuild-vue": "^0.4.0",
+    "css-loader": "^5.2.7",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2"
   },
   "engines": {
     "node": ">= 4.0.0",
