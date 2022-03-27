@@ -1,10 +1,9 @@
-# VueRuler
+# vue-ruler
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Npm Package](https://img.shields.io/npm/v/@gausszhou/vue-ruler.svg)](https://www.npmjs.com/package/@gausszhou/vue-ruler)
 
 
-[![Github Pages](https://static.gausszhou.top/data/image/github/vue-ruler.png)](https://www.gausszhou.top/vue-ruler)
-
+[![Github Pages](https://static.gausszhou.top/data/image/github/vue-ruler-1.png)](https://www.gausszhou.top/vue-ruler)
 
 ## Todo List
 

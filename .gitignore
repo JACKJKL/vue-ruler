@@ -1,7 +1,12 @@
-.DS_Store
 node_modules/
 dist/
 lib/
+
+# macos hidden files
+.DS_Store
+
+# npm files
+package-lock.json
 
 # compress files
 *.zip
